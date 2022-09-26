@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="/files/src/style.css"><a href="/">home</a> <a href="//user-images.githubusercontent.com/97191004/192190185-e9f52700-d706-483c-af08-43e8395ec5e4.jpeg">download</a><img src="//user-images.githubusercontent.com/97191004/192190185-e9f52700-d706-483c-af08-43e8395ec5e4.jpeg">
