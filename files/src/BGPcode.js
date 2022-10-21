@@ -223,6 +223,9 @@ var BGPcode = {
       }
     }
   },
+  sleep:function(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  },
   JSFck: function(tnjs) {
     const zero = '+[]';
     const one = '+!![]';
