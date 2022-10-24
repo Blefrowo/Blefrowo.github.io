@@ -51,7 +51,11 @@ var BGPcode = {
     unpredictableRandom: function(i = 1, a = 10) {
       t = Math.floor(Math.random() * a) + i;
       f = (t + t) / 2;
-      return f
+      return f;
+    },
+    percentage: function(f = 34, s = 40) {
+      r = f / s;
+      return r * 100;
     }
   },
   operators:{
