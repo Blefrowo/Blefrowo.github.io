@@ -56,11 +56,6 @@ var BGPcode = {
     percentage: function(f = 34, s = 40) {
       r = f / s;
       return r * 100;
-    },
-    showPercentage: function(f = 34, s = 40) {
-      r = f / s;
-      a = r * 100;
-      return a + 100;
     }
   },
   operators:{
