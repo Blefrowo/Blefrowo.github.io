@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600">
 <link rel="stylesheet" href="/downloads/style.css">
 <main>
-  <div class="button">
+  <div class="button" onclick="setTimeout(()=>{download();},2400);">
     <div class="text">Download</div>
   </div>
   <div class="progress-bar"></div>
@@ -10,4 +10,11 @@
     <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
   </svg>
 </main>
-<script src="/downloads/script.js">
+<script src="/downloads/script.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+<script>
+function download(){
+  window.location.replace('https://github.com/Blefrowo/Blefrowo.github.io/files/9871098/template.zip');
+}
+</script>
