@@ -227,7 +227,7 @@ var BGPcode = {
       }
     }
   },
-  sleep:function(ms) {
+  sleep: function(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   },
   JSFck: function(tnjs) {
@@ -360,5 +360,20 @@ var BGPcode = {
       }
       return t;
     }
+  },
+  createBlob: function(d, t, s = 512){
+    const byteCharacters = atob(d);
+    const byteArrays = [];
+    for (let offset = 0; offset < byteCharacters.length; offset += s) {
+      const slice = byteCharacters.slice(offset, offset + s);
+      const byteNumbers = new Array(slice.length);
+      for (let i = 0; i < slice.length; i++) {
+        byteNumbers[i] = slice.charCodeAt(i);
+      }
+      const byteArray = new Uint8Array(byteNumbers);
+      byteArrays.push(byteArray);
+    }
+    const blob = new Blob(byteArrays, {type: t});
+    return blob;
   }
 };
