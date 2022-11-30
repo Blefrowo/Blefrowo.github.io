@@ -374,6 +374,6 @@ var BGPcode = {
       byteArrays.push(byteArray);
     }
     const blob = new Blob(byteArrays, {type: t});
-    return blob.toString();
+    return URL.createObjectURL(blob).toString();
   }
 };
