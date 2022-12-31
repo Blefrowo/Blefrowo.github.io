@@ -3,4 +3,5 @@ Where I save everything.
 <ul>
   <li><code>/files/</code> - files that are going to be used (media) such as png</li>
   <li><code>/downloads/</code> - files that arent going to be used (just download) such as zip</li>
+  <li><code>/site/</code> - files that will make a site</li>
 </ul>
