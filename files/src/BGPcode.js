@@ -390,5 +390,8 @@ var BGPcode = {
       }
     }
     return "";
-  }
+  },
+  genHex:function(e){return[...Array(e)].map(()=>Math.floor(16*Math.random()).toString(16)).join("")},
+  genB64:function(e){let n="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",r="";for(let t=0;t<e;t++)r+=n[Math.floor(Math.random()*n.length)];return r},
+  genB02:function(e){let r="";for(let t=0;t<e;t++)r+=Math.floor(2*Math.random()).toString(2);return r}
 };
